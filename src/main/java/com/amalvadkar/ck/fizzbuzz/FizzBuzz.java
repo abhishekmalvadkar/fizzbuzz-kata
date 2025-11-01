@@ -1,25 +1,33 @@
 package com.amalvadkar.ck.fizzbuzz;
 
+import static java.lang.Integer.parseInt;
+
 public class FizzBuzz {
 
     public static final String FIZZ = "Fizz";
     public static final String BUZZ = "Buzz";
     public static final String FIZZ_BUZZ = FIZZ + BUZZ;
+    public static final int NUMBER_FIVE = 5;
+    public static final int NUMBER_THREE = 3;
 
     public String speak(String number) {
 
-        if(isDivisibaleByThree(number) && isDivisibaleByFive(number)) return FIZZ_BUZZ;
-        if (isDivisibaleByThree(number)) return FIZZ;
-        if (isDivisibaleByFive(number)) return BUZZ;
+        if(isDivisibleByThreeAndFiveBoth(number)) return FIZZ_BUZZ;
+        if (isDivisibleByThree(number)) return FIZZ;
+        if (isDivisibleByFive(number)) return BUZZ;
 
         return number;
     }
 
-    private static boolean isDivisibaleByFive(String number) {
-        return Integer.parseInt(number) % 5 == 0;
+    private static boolean isDivisibleByThreeAndFiveBoth(String number) {
+        return isDivisibleByThree(number) && isDivisibleByFive(number);
     }
 
-    private static boolean isDivisibaleByThree(String number) {
-        return Integer.parseInt(number) % 3 == 0;
+    private static boolean isDivisibleByFive(String number) {
+        return parseInt(number) % NUMBER_FIVE == 0;
+    }
+
+    private static boolean isDivisibleByThree(String number) {
+        return parseInt(number) % NUMBER_THREE == 0;
     }
 }
