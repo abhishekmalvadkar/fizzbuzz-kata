@@ -7,6 +7,10 @@ public class FizzBuzz {
             return "Fizz";
         }
 
+        if (Integer.parseInt(number) % 5 == 0) {
+            return "Buzz";
+        }
+
         return number;
     }
 }

@@ -24,4 +24,10 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertThat(fizzBuzz.speak("3")).isEqualTo("Fizz");
     }
+
+    @Test
+    void should_return_Buzz_if_input_is_divisible_by_5() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.speak("5")).isEqualTo("Buzz");
+    }
 }
