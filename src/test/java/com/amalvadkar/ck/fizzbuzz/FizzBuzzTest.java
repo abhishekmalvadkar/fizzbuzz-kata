@@ -18,4 +18,10 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertThat(fizzBuzz.speak("2")).isEqualTo("2");
     }
+
+    @Test
+    void should_return_Fizz_if_input_is_divisible_by_3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.speak("3")).isEqualTo("Fizz");
+    }
 }
