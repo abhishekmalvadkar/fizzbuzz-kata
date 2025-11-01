@@ -3,14 +3,22 @@ package com.amalvadkar.ck.fizzbuzz;
 public class FizzBuzz {
     public String speak(String number) {
 
-        if (Integer.parseInt(number) % 3 == 0) {
+        if (isDivisibaleByThree(number)) {
             return "Fizz";
         }
 
-        if (Integer.parseInt(number) % 5 == 0) {
+        if (isDivisibaleByFive(number)) {
             return "Buzz";
         }
 
         return number;
+    }
+
+    private static boolean isDivisibaleByFive(String number) {
+        return Integer.parseInt(number) % 5 == 0;
+    }
+
+    private static boolean isDivisibaleByThree(String number) {
+        return Integer.parseInt(number) % 3 == 0;
     }
 }
