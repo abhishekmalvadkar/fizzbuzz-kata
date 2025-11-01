@@ -12,4 +12,10 @@ public class FizzBuzzTest {
         String response = fizzBuzz.speak("1");
         assertThat(response).isEqualTo("1");
     }
+
+    @Test
+    void should_return_2_if_input_is_2() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.speak("2")).isEqualTo("2");
+    }
 }
