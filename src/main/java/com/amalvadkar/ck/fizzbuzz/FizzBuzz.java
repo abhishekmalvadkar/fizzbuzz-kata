@@ -1,15 +1,14 @@
 package com.amalvadkar.ck.fizzbuzz;
 
 public class FizzBuzz {
+
+    public static final String FIZZ = "Fizz";
+    public static final String BUZZ = "Buzz";
+
     public String speak(String number) {
 
-        if (isDivisibaleByThree(number)) {
-            return "Fizz";
-        }
-
-        if (isDivisibaleByFive(number)) {
-            return "Buzz";
-        }
+        if (isDivisibaleByThree(number)) return FIZZ;
+        if (isDivisibaleByFive(number)) return BUZZ;
 
         return number;
     }
