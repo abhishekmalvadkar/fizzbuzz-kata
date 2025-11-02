@@ -1,4 +1,4 @@
-package com.amalvadkar.ck;
+package com.amalvadkar;
 
 import org.junit.jupiter.api.Test;
 

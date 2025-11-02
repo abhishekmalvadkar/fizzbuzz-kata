@@ -1,4 +1,4 @@
-package com.amalvadkar.ck.fizzbuzz;
+package com.amalvadkar.fbk;
 
 import org.junit.jupiter.api.Test;
 
