@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.amalvadkar</groupId>
-	<artifactId>code-kata</artifactId>
+	<artifactId>fizzbuzz-kata</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>code-kata</name>
+	<name>fizzbuzz-kata</name>
 	<description>Coding Kata Practice</description>
 	<url/>
 	<licenses>
